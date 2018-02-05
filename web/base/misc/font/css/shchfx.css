@@ -1,0 +1,17 @@
+table {
+	border-collapse: collapse;
+}
+#abc td,th {
+	border: 1px solid #2A2A2A;
+	border-top-width: 0px;
+}
+#topblue {
+	background-color: #00ccff;
+	border-top-width: 1px;
+}
+#blue {
+	background-color: #00ccff;
+}
+#left{
+border-left-width: 0px;
+}

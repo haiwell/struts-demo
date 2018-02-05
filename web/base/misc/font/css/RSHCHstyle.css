@@ -1,0 +1,44 @@
+#box-table-a {
+	border-collapse: collapse;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+	width: 100%;
+}
+
+input {
+	border: 0px;
+}
+
+TEXTAREA {
+	border: 0px;
+}
+
+TH {
+	text-align: center;
+}
+
+TABLE {
+	border: 1px;
+}
+
+TD {
+	border: 1px;
+}
+
+html,body,table,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main,summary,time,mark,audio,video
+	{
+	background: none repeat scroll 0 0 transparent;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	margin: 0;
+}
+
+table td,th{
+	border: 1px solid black;
+}
+
+td,td img {
+	vertical-align: top;
+}

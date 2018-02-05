@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.devMode" value="true" />
+	
+<!-- 	<constant name="struts.convention.package.locators" value="action,actions,struts,struts2,hello"/> -->
+<!-- 	<constant name="struts.convention.result.path" value="/base/"/> -->
+	
+	<package name="logon" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="login" class="com.struts.base.hello.LoginAction">
+			<result name="success">
+				/base/misc/login/nameform.jsp
+			</result>
+		</action>
+		<action name="welcome" class="com.struts.base.hello.WelcomeAction">
+			<result name="success">
+				/base/misc/login/welcome.jsp
+			</result>
+		</action>
+	</package>
+	<!-- Add packages here -->
+	<package name="validation" namespace="/validation" extends="struts-default">
+		<action name="user" class="com.struts.base.validation.UserAction"
+			method="add">
+			<result name="success">/base/validation/validate_success.jsp</result>
+			<result name="error">/base/validation/validate_error.jsp</result>
+		</action>
+	</package>
+
+	<package name="webcontext" namespace="/webcontext" extends="struts-default">
+		<action name="webcontext" class="com.struts.base.webcontext.WebContext">
+			<result name="success">/base/webcontext/webcontext.jsp</result>
+		</action>
+		<action name="webcontext1" class="com.struts.base.webcontext.WebContext1">
+			<result name="success">/base/webcontext/webcontext.jsp</result>
+		</action>
+		<action name="webcontext2" class="com.struts.base.webcontext.WebContext2">
+			<result name="success">/base/webcontext/webcontext.jsp</result>
+		</action>
+		<action name="webcontext3" class="com.struts.base.webcontext.WebContext3">
+			<result name="success">/base/webcontext/webcontext.jsp</result>
+		</action>
+	</package>
+
+	<package name="ognl" namespace="/ognl" extends="struts-default">
+		<action name="ognl" class="com.struts.base.ognl.OgnlAction">
+			<result name="success">/base/ognl/ognl.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+body{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	background:url(images/DL-bg.jpg) repeat-x scroll 0 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#041F4E;
+}
+img{
+	border:none;
+}
+#wrap{
+	background:url(images/DL-bg2.jpg) center top no-repeat;
+	height:700px;
+}
+.content{
+	width:571px;
+	margin:0 auto;
+	height:47px;
+}
+.login{
+	background: #fff;
+	width:571px;
+	height:145px;
+	margin:0 auto;
+}
+.dl-input{
+	width:95px;
+	height:25px;
+	background:#B5D6E9;
+	border:1px solid #6FA8C6;
+}
+
+input,select{
+	border:1px solid #6FA8C6;
+	height: 25px;
+	line-height: 25px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#041F4E;
+}
